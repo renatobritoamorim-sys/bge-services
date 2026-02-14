@@ -10,11 +10,14 @@ const Hero: React.FC = () => {
     <div className="relative w-full h-[600px] lg:h-[750px] bg-gray-100 overflow-hidden">
       {/* Background Image - Scale animation slightly reduced for smoothness */}
       <div 
-        className="absolute inset-0 w-full h-full object-cover object-[50%_70%] md:object-center brightness-90"
-/>
-        style={{ backgroundImage: `url('${HERO_IMAGE_URL}')`, animationDuration: '25s' }}
-        role="img"
-        aria-label="Car Hauling Truck"
+        className="absolute inset-0 w-full h-full brightness-90"
+  style={{
+    backgroundImage: `url('${HERO_IMAGE_URL}')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+  aria-label="Car Hauling Truck"
       ></div>
 
       {/* NO OVERLAY - Image is fully visible */}
